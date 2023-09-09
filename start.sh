@@ -6,7 +6,7 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "jepthoniq" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9Kb2tlck11c2ljL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
+        echo "https://github.com/jsbsjv/MRX/tree/main=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_ziplink () {
             echo "${UPSTREAM_REPO}/archive/main.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9Kb2tlck11c2ljL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
+        echo "https://github.com/jsbsjv/MRX/tree/main=" | base64 -d
     fi
 }
 
